@@ -1,0 +1,257 @@
+/* основні кольори сторінок:
+
+заголовки                     #2E2F42
+контакти, p                   #434455
+hero текст                    #FFFFFF
+лого та фон кнопки            #4D5AE5
+фон кнопки portfolio          #404BBF
+фон кнопок portfolio          rgba(231, 233, 252, 1)
+лого footer                   #F4F4FD
+фон                           #FFFFFF
+другорядний фон               #F4F4FD
+hero та footer фон            #2E2F42
+*/
+
+/* root, крапки списків, підкреслення посилань */
+
+:root {
+  --fontfamily: "Roboto", sans-serif;
+  --fontfamilysecond: "Raleway", sans-serif;
+  --maincolor: #434455;
+  --textcolor: #2e2f42;
+  --secondarycolor: #f4f4fd;
+  --backgroundcolor: #ffffff;
+  --logowebcolor: #4d5ae5;
+  --activebackbtncolor: #404bbf;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*body* - глобальні стилі */
+
+body {
+  font-family: var(--fontfamily);
+  color: var(--maincolor);
+  background-color: var(--backgroundcolor);
+}
+
+/* Header */
+
+.nav-menu > a {
+  font-size: 18px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-web {
+  color: var(--logowebcolor);
+  font-family: var(--fontfamilysecond);
+}
+
+/* Лого Studio верх */
+
+.logo-studioup {
+  color: var(--textcolor);
+  font-family: var(--fontfamilysecond);
+}
+
+/* Лого Studio низ */
+
+.logo-studiofoot {
+  color: var(--secondarycolor);
+  font-family: var(--fontfamilysecond);
+}
+
+/* Навігація */
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--textcolor);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--activebackbtncolor);
+}
+
+/* Contacts */
+
+.adrs {
+  font-style: normal;
+}
+
+.address-links .link {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--maincolor);
+}
+
+.address-links .link:hover,
+.address-links .link:focus {
+  color: var(--activebackbtncolor);
+}
+
+/* Перша секція / Hero */
+
+.hero {
+  background-color: var(--textcolor);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--backgroundcolor);
+}
+
+.hero-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  font-family: var(--fontfamily);
+  color: var(--backgroundcolor);
+  background-color: var(--logowebcolor);
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--activebackbtncolor);
+}
+
+/* Друга секція / advantages */
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--textcolor);
+  background-color: var(--backgroundcolor);
+}
+
+.text-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Третя секція */
+
+.headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--textcolor);
+}
+
+/* Четверта секція */
+
+.section-team {
+  background-color: var(--secondarycolor);
+}
+
+.master-photo {
+  background-color: var(--backgroundcolor);
+}
+
+.headline-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--textcolor);
+}
+
+/* Перша секція Portfolio */
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--fontfamily);
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--logowebcolor);
+  background-color: var(--secondarycolor);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: var(--backgroundcolor);
+  background-color: var(--activebackbtncolor);
+}
+
+/* Друга секція Portfolio */
+
+.item-photo .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--textcolor);
+}
+
+.item-photo .subtitle {
+  font-family: var(--fontfamily);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--maincolor);
+}
+
+/* Підвал */
+
+.foot-menu {
+  background-color: var(--textcolor);
+}
+
+.foot-menu > a {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.foot-menu > p {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondarycolor);
+}
