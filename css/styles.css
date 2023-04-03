@@ -16,8 +16,6 @@
 
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .link {
@@ -30,6 +28,17 @@ h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -67,8 +76,8 @@ body {
 }
 
 .section {
-  padding-top: 0px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .title {
@@ -183,6 +192,10 @@ body {
 
 /* Друга секція / advantages */
 
+.advantages {
+  display: flex;
+}
+
 .tit .title {
   font-weight: 500;
   font-size: 20px;
@@ -209,8 +222,13 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--textcolor);
+  padding-top: 0;
   margin-top: 0;
   margin-bottom: 72px;
+}
+
+.list-doing {
+  display: flex;
 }
 
 /* Четверта секція */
@@ -233,6 +251,10 @@ body {
   color: var(--textcolor);
   margin-top: 0;
   margin-bottom: 72px;
+}
+
+.team-img {
+  display: flex;
 }
 
 /* Перша секція Portfolio */
@@ -265,7 +287,14 @@ body {
 /* Друга секція Portfolio */
 
 .filter-btn {
-  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-photo {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 72px;
 }
 
 .item-photo .title {
