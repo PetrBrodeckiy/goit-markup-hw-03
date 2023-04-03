@@ -1,18 +1,4 @@
-/* основні кольори сторінок:
-
-заголовки                     #2E2F42
-контакти, p                   #434455
-hero текст                    #FFFFFF
-лого та фон кнопки            #4D5AE5
-фон кнопки portfolio          #404BBF
-фон кнопок portfolio          rgba(231, 233, 252, 1)
-лого footer                   #F4F4FD
-фон                           #FFFFFF
-другорядний фон               #F4F4FD
-hero та footer фон            #2E2F42
-*/
-
-/* root, крапки списків, підкреслення посилань */
+/* root */
 
 :root {
   --fontfamily: "Roboto", sans-serif;
@@ -23,14 +9,53 @@ hero та footer фон            #2E2F42
   --backgroundcolor: #ffffff;
   --logowebcolor: #4d5ae5;
   --activebackbtncolor: #404bbf;
+  --btnbordercolor: #e7e9fc;
 }
+
+/* Скидання стилів браузера  */
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* border-box ===========================================================*/
+
+html {
+  box-sizing: border-box;
+}
+
+/* Це рамка блоків для верстки. Потім потрібно буде видалити =============================*/
+
+.box {
+  outline: 2px solid orangered;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /*body* - глобальні стилі */
@@ -39,6 +64,15 @@ body {
   font-family: var(--fontfamily);
   color: var(--maincolor);
   background-color: var(--backgroundcolor);
+}
+
+.section {
+  padding-top: 0px;
+  margin-bottom: 120px;
+}
+
+.title {
+  margin-top: 0;
 }
 
 /* Header */
@@ -112,15 +146,18 @@ body {
 
 .hero {
   background-color: var(--textcolor);
+  text-align: center;
 }
 
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: var(--backgroundcolor);
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .hero-btn {
@@ -134,6 +171,9 @@ body {
   color: var(--backgroundcolor);
   background-color: var(--logowebcolor);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: inline-block;
 }
 
 .hero-btn:hover,
@@ -143,7 +183,7 @@ body {
 
 /* Друга секція / advantages */
 
-.title {
+.tit .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -169,6 +209,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--textcolor);
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 /* Четверта секція */
@@ -189,6 +231,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--textcolor);
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 /* Перша секція Portfolio */
@@ -205,6 +249,10 @@ body {
   color: var(--logowebcolor);
   background-color: var(--secondarycolor);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 12px 24px;
+  display: inline-block;
+  border: 1px solid var(--btnbordercolor);
 }
 
 .btn:hover,
@@ -215,6 +263,10 @@ body {
 }
 
 /* Друга секція Portfolio */
+
+.filter-btn {
+  margin-bottom: 72px;
+}
 
 .item-photo .title {
   font-weight: 500;
