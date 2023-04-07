@@ -388,7 +388,6 @@ body {
 }
 
 .down-card {
-  margin-bottom: 32px;
 }
 
 .item-photo {
@@ -414,6 +413,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--maincolor);
+}
+
+.text-card {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  border: 1px solid var(--btnbordercolor);
+  border-top: 0;
 }
 
 /* Підвал */
