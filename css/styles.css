@@ -152,13 +152,13 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .site-nav .link {
@@ -219,18 +219,11 @@ body {
   max-width: 496px;
 }
 
-.first-btn {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-}
-
 .hero-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
+
   align-items: center;
   letter-spacing: 0.04em;
   font-family: var(--fontfamily);
@@ -239,7 +232,12 @@ body {
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-btn:hover,
